@@ -6,14 +6,14 @@
 
     <parent>
         <groupId>by.andd3dfx</groupId>
-        <artifactId>db-pool-in-tests</artifactId>
+        <artifactId>db-containers-pool-in-tests</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>db-pool-example</artifactId>
+    <artifactId>db-containers-pool-example</artifactId>
     <packaging>jar</packaging>
-    <name>db-pool-example</name>
-    <description>Example of wiring the test database pool library</description>
+    <name>db-containers-pool-example</name>
+    <description>Example of wiring the PostgreSQL containers pool library in integration tests</description>
 
     <dependencies>
         <dependency>

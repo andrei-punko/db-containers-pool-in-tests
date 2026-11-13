@@ -6,14 +6,14 @@
 
     <parent>
         <groupId>by.andd3dfx</groupId>
-        <artifactId>db-pool-in-tests</artifactId>
+        <artifactId>db-containers-pool-in-tests</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>db-pool-library</artifactId>
     <packaging>jar</packaging>
     <name>db-pool-library</name>
-    <description>Test database pool and supporting classes for integration tests</description>
+    <description>Library providing a pool of isolated PostgreSQL containers for integration tests</description>
 
     <dependencies>
         <dependency>

@@ -1,9 +1,9 @@
 # DB pool in tests
 
-[![Maven CI](https://github.com/andrei-punko/db-pool-in-tests/actions/workflows/maven.yml/badge.svg)](https://github.com/andrei-punko/db-pool-in-tests/actions/workflows/maven.yml)
+[![Maven CI](https://github.com/andrei-punko/db-containers-pool-in-tests/actions/workflows/maven.yml/badge.svg)](https://github.com/andrei-punko/db-containers-pool-in-tests/actions/workflows/maven.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](LICENSE)
 
-Repository: [github.com/andrei-punko/db-pool-in-tests](https://github.com/andrei-punko/db-pool-in-tests)
+Repository: [github.com/andrei-punko/db-containers-pool-in-tests](https://github.com/andrei-punko/db-containers-pool-in-tests)
 
 A multi-module Maven project: a **library** that provides a pool of isolated PostgreSQL databases for integration tests (fast cloning from a
 template database), plus an **example** Spring Boot + Testcontainers setup.
@@ -18,7 +18,7 @@ template database), plus an **example** Spring Boot + Testcontainers setup.
 | Module            | Artifact                      | Purpose                                                                                        |
 |-------------------|-------------------------------|------------------------------------------------------------------------------------------------|
 | `db-pool-library` | `by.andd3dfx:db-pool-library` | Pool implementation, `DataSource` routing, Testcontainers helpers, JUnit extension for metrics |
-| `db-pool-example` | `by.andd3dfx:db-pool-example` | Minimal app and integration tests that demonstrate typical wiring                              |
+| `db-containers-pool-example` | `by.andd3dfx:db-containers-pool-example` | Minimal app and integration tests that demonstrate typical wiring                    |
 
 The root `pom.xml` is an aggregator (`packaging pom`) and contains shared `dependencyManagement` for the Testcontainers BOM.
 
@@ -30,7 +30,7 @@ From the project directory:
 mvn clean verify
 ```
 
-- Builds the library first, then the example (4 integration tests in `db-pool-example`).
+- Builds the library first, then the example (4 integration tests in `db-containers-pool-example`).
 - The example requires **Docker** (or a compatible runtime) for Testcontainers.
 
 Install only the library into the local repository:
@@ -56,7 +56,7 @@ segment with the assigned clone DB name.
 
 ## Example module (reference wiring)
 
-Start here when adopting the library. Key files in `db-pool-example`:
+Start here when adopting the library. Key files in `db-containers-pool-example`:
 
 | File                                                 | Role                                                                              |
 |------------------------------------------------------|-----------------------------------------------------------------------------------|

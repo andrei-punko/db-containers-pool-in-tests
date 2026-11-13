@@ -12,16 +12,16 @@
     </parent>
 
     <groupId>by.andd3dfx</groupId>
-    <artifactId>db-pool-in-tests</artifactId>
+    <artifactId>db-containers-pool-in-tests</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <packaging>pom</packaging>
-    <name>db-pool-in-tests</name>
-    <description>Multi-module build: test DB pool library and a usage example</description>
+    <name>db-containers-pool-in-tests</name>
+    <description>Multi-module build: PostgreSQL containers pool in tests library and a usage example</description>
 
     <modules>
         <module>db-pool-library</module>
-        <module>db-pool-example</module>
+        <module>db-containers-pool-example</module>
     </modules>
 
     <properties>
